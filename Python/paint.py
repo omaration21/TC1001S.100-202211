@@ -59,6 +59,16 @@ def rectangle(start, end):
 def triangle(start, end):
     "Draw triangle from start to end."
     pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    num=0
+    while num<3:
+        forward((end.x - start.x)/2)
+        left(120)
+        num+=1
+    end_fill()
 
 def tap(x, y):
     "Store starting point or draw shape."
@@ -66,6 +76,7 @@ def tap(x, y):
 
     if start is None:
         state['start'] = vector(x, y)
+
     else:
         shape = state['shape']
         end = vector(x, y)
@@ -76,7 +87,11 @@ def store(key, value):
     "Store value in state at key."
     state[key] = value
 
-state = {'start': None, 'shape': line}
+def change (a):
+    state['width']+=a
+    width(state['width'])
+
+state = {'start': None, 'shape': line, 'width':10}
 setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
@@ -92,4 +107,8 @@ onkey(lambda: store('shape', square), 's')
 onkey(lambda: store('shape', circle), 'c')
 onkey(lambda: store('shape', rectangle), 'r')
 onkey(lambda: store('shape', triangle), 't')
+onkey(lambda: change(1), '+')
+onkey(lambda: change(-1), '-')
 done()
+
+
