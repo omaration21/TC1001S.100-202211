@@ -1,7 +1,7 @@
 # TC1001S - Herramientas Computacionales
-Sample code for the Computer Tools course challenge
+More elaborate explanation in the commits.
 
-Author: Gilberto Echeverria
+Author: 
 Lucía Barrenechea
 
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
@@ -12,28 +12,24 @@ Games included:
 - Cannon
 - Memory
 
-## Installing the Freegames module
 
-1. Make sure Python 3 is installed in your computer, and that you can call
-   it from a terminal
-2. Download the pip installer from: https://bootstrap.pypa.io/get-pip.py
-3. Run the installer:
-```
-python3 get-pip.py
-```
-4. Install the module:
-```
-pip install freegames
-```
+COMMITS
 
-## Installing on MobaXterm (Windows)
+lucia_triangulo
+This branch adds the option to draw a triangle in the game paint.py
 
-To install the required software, run the following commands:
-
-1. apt-get install python3
-2. apt-get install python3-tkinter
-3. apt-get install python3-pip
-4. pip3 install freegames
+lucia_width
+This branch changes the width of the drawing in the game paint.py
 
 lucia_color
-This branch adds a new color to the game paint.py. This colo is purple.
+This branch adds a new color to the game paint.py. This color is purple.
+
+lucia_ghost
+This branch adds a new ghost in the game pacman.py
+
+lucia_tablero
+This branch changes the board in the game pacman.py
+
+lucia_gravedad
+This branch changes the way the targets move in the game cannon.py
+
