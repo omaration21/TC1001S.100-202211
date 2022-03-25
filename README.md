@@ -2,6 +2,7 @@
 Sample code for the Computer Tools course challenge
 
 Author: Gilberto Echeverria
+Lucía Barrenechea
 
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
 Games included:
@@ -33,3 +34,6 @@ To install the required software, run the following commands:
 2. apt-get install python3-tkinter
 3. apt-get install python3-pip
 4. pip3 install freegames
+
+lucia_color
+This branch adds a new color to the game paint.py. This colo is purple.
