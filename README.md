@@ -1,8 +1,9 @@
-# TC1001S - Herramientas Computacionales
+# TC1001S - Herramientas Computacionales 
 More elaborate explanation in the commits.
 
 Author: 
 Lucía Barrenechea
+Omar Rivera
 
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html
 Games included:
@@ -32,4 +33,20 @@ This branch changes the board in the game pacman.py
 
 lucia_gravedad
 This branch changes the way the targets move in the game cannon.py
+
+cannon_score
+This branch changes the movement, instead of moving with the arrows now yo can move with w, a, s, d in the game cannon.py
+This branch also adds an score at the right corner in the game cannon.py
+
+vibora_speed
+This branch changes the speed of the snake in the game snake.py
+This branch also changes the color of the snake and the food in the game snake.py
+
+omar_circulo
+This branch adds the option to draw a circle in the game paint.py
+
+vibora_move
+This branch changes the way the snake moves in the game snake.py
+
+
 
