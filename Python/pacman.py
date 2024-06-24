@@ -1,5 +1,6 @@
 """Pacman, classic arcade game.
 
+
 Exercises
 
 1. Change the board.
@@ -24,6 +25,7 @@ ghosts = [
     [vector(-180, -160), vector(0, 5)],
     [vector(100, 160), vector(0, -5)],
     [vector(100, -160), vector(-5, 0)],
+    [vector(100, -150), vector(-2, 0)],
 ]
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,

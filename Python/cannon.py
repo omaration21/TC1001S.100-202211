@@ -1,5 +1,6 @@
 """Cannon, hitting targets with projectiles.
 
+
 Exercises
 
 1. Keep score by counting target hits.
@@ -53,7 +54,12 @@ def move():
 
     # Move the existing targets
     for target in targets:
-        target.x -= 0.5
+        if target.x % 10 <= 5:
+            target.x -= 0.5
+            target.y -= 0.7
+        else:
+            target.x -= 0.5
+            target.y += 0.7
 
     # Move the cannon shot
     if inside(ball):
